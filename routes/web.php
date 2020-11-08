@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/test', 'TestController@index')->name('dashboard');
-Route::get('/pdf', 'TestController@prev')->name('pdf');
-
+    return view('front.landing');
+})->name('home');
+Route::get('/admin', function () {
+    return view('profil.index');
+})->name('home');
+// Route::get('/test', 'TestController@index')->name('dashboard');
+// Route::get('/pdf', 'TestController@prev')->name('pdf');
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

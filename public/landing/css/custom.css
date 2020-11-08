@@ -1,0 +1,21 @@
+img.logo{
+  max-height: 60px;
+}
+.bg-shape,
+.bg-gray{
+  background-color: #fef5ee!important;
+}
+
+.holder{
+  color: #f96145 !important;
+}
+
+.btn--primary{
+  background-color: #f99a45;
+  border-color: transparent;
+  color: white !important;
+}
+.btn--primary:hover{
+  background-color: #f96145;
+  border-color: transparent;
+}
