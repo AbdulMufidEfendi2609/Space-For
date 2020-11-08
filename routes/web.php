@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 Route::get('/test', 'TestController@index')->name('dashboard');
 Route::get('/pdf', 'TestController@prev')->name('pdf');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
