@@ -14,7 +14,6 @@
     <!-- Fonts
     ============================================= -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700' rel='stylesheet' type='text/css'>
-
     <!-- Stylesheets
     ============================================= -->
     <link href="{{ asset('landing/css/external.css') }}" rel="stylesheet">
@@ -49,6 +48,7 @@
     <script src="{{ asset('landing/js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('landing/js/plugins.js') }}"></script>
     <script src="{{ asset('landing/js/functions.js') }}"></script>
+    @yield('script')
 </body>
 
 </html>

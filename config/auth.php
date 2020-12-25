@@ -46,6 +46,65 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'Administrator' => [
+            'driver' => 'session',
+            'provider' => 'Administrator',
+        ],
+
+        'apiadmininistrator' => [
+            'driver' => 'token',
+            'provider' => 'admin',
+        ],
+
+        'kalab' => [
+            'driver' => 'session',
+            'provider' => 'kalab',
+        ],
+
+        'apikalab' => [
+          'driver' => 'token',
+          'provider' => 'kalab',
+        ],
+
+        'dosen' => [
+            'driver' => 'session',
+            'provider' => 'dosen',
+        ],
+
+        'apidosen' => [
+          'driver' => 'token',
+          'provider' => 'dosen',
+        ],
+
+        'aslab' => [
+          'driver' => 'session',
+          'provider' => 'aslab',
+        ],
+
+        'apiaslab' => [
+          'driver' => 'token',
+          'provider' => 'aslab',
+        ],
+
+        'asprak' => [
+          'driver' => 'session',
+          'provider' => 'asprak',
+        ],
+
+        'apiasprak' => [
+          'driver' => 'token',
+          'provider' => 'asprak',
+        ],
+
+        'praktikan' => [
+          'driver' => 'session',
+          'provider' => 'praktikan',
+        ],
+
+        'apipraktikan' => [
+          'driver' => 'token',
+          'provider' => 'praktikan',
+        ],
     ],
 
     /*
@@ -70,12 +129,37 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
+        'Administrator' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'kalab' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'dosen' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'aslab' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'asprak' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        'praktikan' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+    ],
 
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
-    ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -93,25 +177,11 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
+        'akun' => [
+            'provider' => 'akun',
             'table' => 'password_resets',
             'expire' => 60,
-            'throttle' => 60,
         ],
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Password Confirmation Timeout
-    |--------------------------------------------------------------------------
-    |
-    | Here you may define the amount of seconds before a password confirmation
-    | times out and the user is prompted to re-enter their password via the
-    | confirmation screen. By default, the timeout lasts for three hours.
-    |
-    */
-
-    'password_timeout' => 10800,
 
 ];

@@ -7,9 +7,9 @@
                         <img class="logo" src="{{ asset('landing/images/logo/logo-full.png') }}" alt="Siena Logo">
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-8">
+                {{-- <div class="col-12 col-md-12 col-lg-8">
                     <div class="footer-menu">
-                        <a href="#">home</a>
+                        <a href="#">Dashboard</a>
                         <a href="#">Features</a>
                         <a href="#">Services</a>
                         <a href="#">home</a>
@@ -17,16 +17,16 @@
                         <a href="#">Pricing</a>
                         <a href="#">Contact</a>
                     </div>
-                </div>
+                </div> --}}
             </div><!-- .row end -->
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-6">
                     <div class="footer-info">
-                        <p>support@siena.com</p>
-                        <p>+61 525 240 310</p>
+                        <p>space-for.me@gmail.com</p>
+                        <p>+62 525 240 310</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-6">
+                {{-- <div class="col-12 col-md-12 col-lg-6">
                     <div class="footer-social">
                         <a class="twitter" href="#">
                             <i class="fa fa-twitter"></i>
@@ -41,7 +41,7 @@
                             <i class="fa fa-google-plus"></i>
                         </a>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <!-- .row end -->
         </div>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-12 col-md-12 col-lg-12">
                     <div class="footer-copyright">
-                        <span>&copy; Zytheme 2019, All Rights Reserved.</span>
+                        <span>&copy; Space-For.me 2020, All Rights Reserved.</span>
                     </div>
                 </div>
             </div>
